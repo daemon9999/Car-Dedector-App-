@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+html, body, #__next {
+  @apply h-full
+}
+
+/* width */
+.table-scrollbar::-webkit-scrollbar {
+  @apply w-3 
+}
+
+/* Track */
+.table-scrollbar::-webkit-scrollbar-track {
+  @apply bg-slate-900 rounded-b
+}
+
+/* Handle */
+.table-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-blue-500 rounded
+}
+
+/* Handle on hover */
+.table-scrollbar::-webkit-scrollbar-thumb:hover {
+  @apply bg-blue-300
+}
