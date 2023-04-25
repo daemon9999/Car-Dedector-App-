@@ -22,8 +22,8 @@ const Table = ({data}) => {
             </tr>
         </thead>
         <tbody className='flex flex-col h-[65vh] overflow-auto table-scrollbar'>
-                {data.map(t => (
-                    <TableValues t={t}/>
+                {data.map((t, key) => (
+                    <TableValues t={t} key={key}/>
                 ))}
         </tbody>
     </table>
